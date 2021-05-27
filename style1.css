@@ -1,0 +1,29 @@
+h1 {
+	display: block;
+	text-align: center;
+}
+.meme-container {
+	position: relative;
+	display: inline;
+}
+
+.input-container {
+	text-align: center;
+}
+
+.image {
+	position: absolute;
+	margin: 10px;
+	max-width: 33.33%;
+}
+
+#top {
+	position: absolute;
+	z-index: 1;
+	text-align: right;
+}
+#bottom {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+}
