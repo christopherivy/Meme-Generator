@@ -1,29 +1,52 @@
 h1 {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	display: block;
 	text-align: center;
 }
-.meme-container {
+#meme-container {
 	position: relative;
-	display: inline;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 0px;
 }
 
 .input-container {
 	text-align: center;
 }
 
-.image {
-	position: absolute;
+.imageDiv {
+	position: relative;
 	margin: 10px;
-	max-width: 33.33%;
 }
 
-#top {
-	position: absolute;
-	z-index: 1;
+.image {
+	width: 300px;
+	height: 300px;
+}
+.image:hover {
+	opacity: 50%;
+}
+
+.newDiv {
+	position: relative;
+	margin: 0 auto;
+}
+
+.top-text {
+	top: 10px;
 	text-align: right;
 }
-#bottom {
+.bottom-text {
+	bottom: 10px;
+}
+
+.memeText {
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	font-size: 30px;
+	color: white;
 	position: absolute;
 	z-index: 1;
-	bottom: 0;
+	left: 30px;
+	text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+		-1px -1px 0 #000;
 }
